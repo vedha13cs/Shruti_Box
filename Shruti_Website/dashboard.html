@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SHRUTI® Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        🎼 SHRUTI®
+
+    </div>
+
+    <div class="profile">
+
+        <span id="username">Welcome</span>
+
+        <button id="logoutBtn">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</header>
+
+<section class="cards">
+
+    <div class="card">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <h3>Today's Practice</h3>
+
+        <h2 id="todayTime">00:00:00</h2>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-fire"></i>
+
+        <h3>Practice Streak</h3>
+
+        <h2>0 Days</h2>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-microphone"></i>
+
+        <h3>Recordings</h3>
+
+        <h2 id="recordCount">0</h2>
+
+    </div>
+
+</section>
+
+<section class="shruti-box">
+
+    <h2>Digital Shruti Box</h2>
+
+    <div class="panel">
+
+        <button id="volUp">▲</button>
+        <button id="toneUp">▲</button>
+        <button id="pitchUp">▲</button>
+
+        <button id="noteBtn">PA</button>
+
+        <button id="powerBtn">⏻</button>
+
+        <button id="volDown">▼</button>
+        <button id="toneDown">▼</button>
+        <button id="pitchDown">▼</button>
+
+        <div class="display" id="display">
+
+            OFF
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="timer">
+
+    <h2>Practice Timer</h2>
+
+    <h1 id="timer">
+
+        00:00:00
+
+    </h1>
+
+    <div class="buttons">
+
+        <button id="startBtn">
+
+            Start
+
+        </button>
+
+        <button id="pauseBtn">
+
+            Pause
+
+        </button>
+
+        <button id="resetBtn">
+
+            Reset
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="recorder">
+
+    <h2>Music Recorder</h2>
+
+    <div class="buttons">
+
+        <button id="recordBtn">
+
+            Start Recording
+
+        </button>
+
+        <button id="stopRecord">
+
+            Stop
+
+        </button>
+
+    </div>
+
+    <audio
+        id="audioPlayer"
+        controls>
+
+    </audio>
+
+</section>
+
+<section class="notes">
+
+    <h2>Practice Notes</h2>
+
+    <textarea
+        id="practiceNotes"
+        placeholder="Write today's practice..."></textarea>
+
+    <button id="saveNotes">
+
+        Save Notes
+
+    </button>
+
+</section>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
